@@ -125,5 +125,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-top: 50px;
     transition: background .1s linear;
+    position: absolute;
+    left: 510px;
+}
+.button:hover{
+    background: #00e0d0;
+    border: none;
+    opacity: 0.9;
+    color:#fff;
 }
 
