@@ -6,10 +6,51 @@ body{
     margin: 0;
     color: #413d4b;
 }
+
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    margin: 0;                     
 }
 
+
+footer .footer {
+    background-image: url('../images/bgk-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+footer p {
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+footer h4 {
+    font-weight: bolder;
+}
+
+a.tajamLogo {                       /*styling applies only to the footer logo. If you all aggree we apply it globally.*/
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 100;
+    background: linear-gradient(to bottom right, rgb(0,224,208), rgb(65, 60, 107));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+footer .footerContent {
+    display: flex;
+    gap: 20px;
+}
+
+<<<<<<< HEAD
 .expertise-container {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -98,4 +139,16 @@ h1, h2, h3, h4, h5, h6 {
     grid-row: 5;
   }
 
+=======
+footer .btnNewsletterEmail {
+    background: none;
+    color: lightgrey;
+    border: 1px solid grey;
+    padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+}
+>>>>>>> 7daa4ae (added html elements and basic styles for footer section)
 
+footer .btnSubmitNewsletter {
+    padding: 0.25rem 1.25rem;
+    opacity: 0.5;
+}
