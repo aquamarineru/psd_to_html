@@ -305,3 +305,74 @@ h4 {
   grid-row: 5;
 }
 /* EXPERTISE CONTAINER END */
+
+/* TEAM */
+.team{
+  background: url('../images/team-bg.png') center center / cover no-repeat;
+  max-height: 900px;
+  display: flex;
+  justify-content: center;
+  margin: 65px 0;
+
+}
+.team__title{
+  color: #fff;
+}
+.team__text{
+  color: #f9f9f9;
+  font-family: "Playfair Display";
+  letter-spacing: 1.05px;
+}
+.team__text::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+.team__descr{
+  color: #f9f9f9;
+  font-family: "Roboto";
+  text-align: center;
+  letter-spacing: 1.05px;
+  margin: 90px 0;
+}
+
+.team__inner{
+  display: flex;
+  margin: 70px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team__block {
+  display: flex;
+  gap: 20px
+
+}
+.team__item{
+  width: 220px;
+  min-height: 300px;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.team__title{
+  padding-top: 13px;
+}
+.team__subtitle{
+  color: #fafafa;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  opacity: .7;
+  margin-top: 7px;
+}
+.team__btn{
+  position: absolute;
+  top: 600px;
+}
