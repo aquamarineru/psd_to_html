@@ -176,9 +176,47 @@ h1, h2, h3, h4, h5, h6 {
   background: url('../images/bgk-middle.png') center center / cover no-repeat;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.video__img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 550px;
+}
+.video__descr{
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 120px;
+}
+.expertise{
+  margin: 70px 0;
+}
+.title {
+  text-align: center;
+}
+.title__descr{
+  text-align: center;
+  margin-top: 16px;
+  color: #2f2d35;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-weight: 400;
+}
+.title__descr::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 20px auto;
+  background-color: #413d4b;
+  opacity: 0.3;
 }
 
-.gridCont{
 /* EXPERTISE CONTAINER FI*/
 .expertise-container {
   display: grid;
@@ -187,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   padding: 5px;
  }
-}
+
 .containerS{
   text-align: center;
 }
@@ -231,8 +269,6 @@ h1, h2, h3, h4, h5, h6 {
   height:40px;
   width:168px;
   margin:20px;
-}
-
 }
 
 .expertise-container div {
@@ -315,3 +351,74 @@ h4 {
   grid-row: 5;
 }
 /* EXPERTISE CONTAINER END */
+
+/* TEAM */
+.team{
+  background: url('../images/team-bg.png') center center / cover no-repeat;
+  max-height: 900px;
+  display: flex;
+  justify-content: center;
+  margin: 65px 0;
+
+}
+.team__title{
+  color: #fff;
+}
+.team__text{
+  color: #f9f9f9;
+  font-family: "Playfair Display";
+  letter-spacing: 1.05px;
+}
+.team__text::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+.team__descr{
+  color: #f9f9f9;
+  font-family: "Roboto";
+  text-align: center;
+  letter-spacing: 1.05px;
+  margin: 90px 0;
+}
+
+.team__inner{
+  display: flex;
+  margin: 70px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team__block {
+  display: flex;
+  gap: 20px
+
+}
+.team__item{
+  width: 220px;
+  min-height: 300px;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.team__title{
+  padding-top: 13px;
+}
+.team__subtitle{
+  color: #fafafa;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  opacity: .7;
+  margin-top: 7px;
+}
+.team__btn{
+  position: absolute;
+  top: 600px;
+}
