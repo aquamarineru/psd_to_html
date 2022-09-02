@@ -6,11 +6,9 @@ body{
     margin: 0;
     color: #413d4b;
 }
-
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;                     
+    margin: 0;
 }
-
 /* Container */
 .container {
   width: 100%;
@@ -44,6 +42,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: #00e0d0;
   margin-left: 10px;
+
+}
 
 .expertise-container {
     display: grid;
@@ -509,131 +509,225 @@ h4 {
 }
 
 
-/*General Rules for Footer: Background image and text styling*/
+/* sima's part*/
+.container_team{
+  height:708px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: url('../images/bgk-middle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.box {
+  background-color: white;
+  height: 308px;
+  width: 220px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.flex_team{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.linkBox{
+  margin: 30px;
+  /*background-color: #ffffff;*/
+  border: 1px solid cyan;
+  opacity: 0.6;
+}
+
+.buttonLink{
+  text-decoration: none;
+  color: cyan;
+}
+
+.container_feedback{
+  justify-content: center;
+  height:688px;
+  display: flex;
+  
+  margin: 68px;
+}
+
+.feedback{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*gap: 10px;*/
+  justify-content: space-between;
+}
+
+
+
+.imgDim{
+  height:40px;
+  /*width:168px;*/
+  margin:20px;
+}
+.imageCont{
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+}
+
+
+.fieldSize{
+  padding-left:10px;
+  height: 44px;
+  width: 452px;
+}
+
+#msgBox{
+  padding-left: 10px;
+  height: 200px;
+  width: 452px;
+}
+
+#teamPart{
+  height:708px;
+}
+
+.flex{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#inputPart{
+  height:688px;
+  display:inline-flex;
+}
 footer .footer {
-    background-image: url('../images/bgk-footer.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: padding-box;
-    padding: 4rem 0;     /*more responsive than fixed height? -> test*/
-    /* height: 400px; */
-    color: #fff;
+  background-image: url('../images/bgk-footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: padding-box;
+  padding: 4rem 0;     /*more responsive than fixed height? -> test*/
+  /* height: 400px; */
+  color: #fff;
 }
 
 footer p {
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: left;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
 }
 
 footer h4 {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 /* General Flex Settings for the Footer and Sub-Containers */
 
 footer .footerContent {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 footer .ftBox {
-    height: 250px;
-    width: 320px;
+  height: 250px;
+  width: 320px;
 }
 
 footer .ftDisclaimer, footer .ftNewsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* About & Disclaimer Section */
 
 footer a.tajamLogo p {                       /*styling applies only to the footer logo. If you all aggree we apply it globally.*/
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 100;
-    background: linear-gradient(to bottom right, rgb(0,224,208), rgb(65, 60, 107));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-left: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 100;
+  background: linear-gradient(to bottom right, rgb(0,224,208), rgb(65, 60, 107));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 10px;
 }
 
 footer a.tajamLogo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 footer a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.8rem; 
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem; 
 }
 
 footer .disclaimerLinks {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Our Studio section */
 
 footer .ftContact {
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
 }
 
 footer .ftFloatContainer {
-    margin: 50px 0 15px;
+  margin: 50px 0 15px;
 }
 
 footer .ftFloatContainer img {
-    width: 1rem;
+  width: 1rem;
 }
 
 footer .ftFloatChild {
-    width: 90%;
-    float: right;
+  width: 90%;
+  float: right;
 }
 
 /*Stay in Touch Section*/
 
 footer .subscribeNewsletter {
-    margin-top: 50px;
-    vertical-align: middle;
+  margin-top: 50px;
+  vertical-align: middle;
 }
 
 footer .inputNewsletterEmail {
-    background: none;
-    color: lightgrey;
-    border: 1px solid grey;
-    padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+  background: none;
+  color: lightgrey;
+  border: 1px solid grey;
+  padding: 0.75rem 1.5rem 0.75rem 0.75rem;
 }
 
 footer .btnSubmitNewsletter {
-    padding: 0.425rem 1.25rem;
-    opacity: 0.4;
-    border: none;
+  padding: 0.425rem 1.25rem;
+  opacity: 0.4;
+  border: none;
 }
 
 footer .btnSubmitNewsletter img {
-    width: 25px;
+  width: 25px;
 }
 
 footer .btnSubmitNewsletter:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 footer .socialMediaIcons {
-    width: 1.7rem;
-    margin: 1rem 0.25rem 0 0;
+  width: 1.7rem;
+  margin: 1rem 0.25rem 0 0;
 }
-
