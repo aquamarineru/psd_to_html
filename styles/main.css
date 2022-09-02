@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+/* EXPERTISE CONTAINER FI*/
 .expertise-container {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -97,3 +98,4 @@ h4 {
   grid-column: 4;
   grid-row: 5;
 }
+/* EXPERTISE CONTAINER END */
