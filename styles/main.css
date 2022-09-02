@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gridCont{
+/* EXPERTISE CONTAINER FI*/
+.expertise-container {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-gap: 1px;
@@ -62,3 +64,86 @@ h1, h2, h3, h4, h5, h6 {
   width:168px;
   margin:20px;
 }
+
+}
+
+.expertise-container div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.expertise_text {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.web_icon {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.web_text {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.web_text, p {
+    font-size: 14px;
+}
+
+.brand_icon {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.brand_text {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.mobile_icon {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.mobile_text {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.search_icon {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.search_text {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.game_icon {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.game_text {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.love_icon {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.love_text {
+  grid-column: 4;
+  grid-row: 5;
+}
+/* EXPERTISE CONTAINER END */
