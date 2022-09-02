@@ -6,9 +6,11 @@ body{
     margin: 0;
     color: #413d4b;
 }
+
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    margin: 0;                     
 }
+
 /* Container */
 .container {
   width: 100%;
@@ -42,6 +44,89 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: #00e0d0;
   margin-left: 10px;
+
+.expertise-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 1px;
+    background-color: white;
+    padding: 5px;
+  }
+  
+  .expertise-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .expertise_text {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .web_icon {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .web_text {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  h4 {
+      font-size: 14px;
+  }
+  
+  .web_text, p {
+      font-size: 14px;
+  }
+  
+  .brand_icon {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .brand_text {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  
+  .mobile_icon {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  
+  .mobile_text {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  
+  .search_icon {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  
+  .search_text {
+    grid-column: 2;
+    grid-row: 5;
+  }
+  
+  .game_icon {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  
+  .game_text {
+    grid-column: 3;
+    grid-row: 5;
+  }
+  
+  .love_icon {
+    grid-column: 4;
+    grid-row: 4;
+  }
 
 }
 /* Navigation */
@@ -422,3 +507,133 @@ h4 {
   position: absolute;
   top: 600px;
 }
+
+
+/*General Rules for Footer: Background image and text styling*/
+
+footer .footer {
+    background-image: url('../images/bgk-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+    padding: 4rem 0;     /*more responsive than fixed height? -> test*/
+    /* height: 400px; */
+    color: #fff;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+footer h4 {
+    font-weight: bolder;
+}
+
+/* General Flex Settings for the Footer and Sub-Containers */
+
+footer .footerContent {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer .ftBox {
+    height: 250px;
+    width: 320px;
+}
+
+footer .ftDisclaimer, footer .ftNewsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* About & Disclaimer Section */
+
+footer a.tajamLogo p {                       /*styling applies only to the footer logo. If you all aggree we apply it globally.*/
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 100;
+    background: linear-gradient(to bottom right, rgb(0,224,208), rgb(65, 60, 107));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+}
+
+footer a.tajamLogo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem; 
+}
+
+footer .disclaimerLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Our Studio section */
+
+footer .ftContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+footer .ftFloatContainer {
+    margin: 50px 0 15px;
+}
+
+footer .ftFloatContainer img {
+    width: 1rem;
+}
+
+footer .ftFloatChild {
+    width: 90%;
+    float: right;
+}
+
+/*Stay in Touch Section*/
+
+footer .subscribeNewsletter {
+    margin-top: 50px;
+    vertical-align: middle;
+}
+
+footer .inputNewsletterEmail {
+    background: none;
+    color: lightgrey;
+    border: 1px solid grey;
+    padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+}
+
+footer .btnSubmitNewsletter {
+    padding: 0.425rem 1.25rem;
+    opacity: 0.4;
+    border: none;
+}
+
+footer .btnSubmitNewsletter img {
+    width: 25px;
+}
+
+footer .btnSubmitNewsletter:hover {
+    opacity: 0.5;
+}
+
+footer .socialMediaIcons {
+    width: 1.7rem;
+    margin: 1rem 0.25rem 0 0;
+}
+
