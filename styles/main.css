@@ -216,6 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #413d4b;
   opacity: 0.3;
 }
+
 /* EXPERTISE CONTAINER FI*/
 .expertise-container {
   display: grid;
@@ -223,6 +224,51 @@ h1, h2, h3, h4, h5, h6 {
   grid-gap: 1px;
   background-color: white;
   padding: 5px;
+ }
+
+.containerS{
+  text-align: center;
+}
+
+.fieldSize{
+  padding-left:10px;
+  height: 44px;
+  width: 452px;
+}
+
+#msgBox{
+  padding-left: 10px;
+  height: 200px;
+  width: 452px;
+}
+
+#teamPart{
+  height:708px;
+}
+
+.flex{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box {
+  height: 308px;
+  width: 220px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#inputPart{
+  height:688px;
+  display:inline-flex;
+}
+
+.imgDim{
+  height:40px;
+  width:168px;
+  margin:20px;
 }
 
 .expertise-container div {
